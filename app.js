@@ -17,7 +17,6 @@ set.addEventListener("click", function() {
 })
 workers.addEventListener("click", function() {
     item = "workers"
-    window.location.href="index.html"
 })
 
 Telegram.WebApp.onEvent("mainButtonClicked", function() {
