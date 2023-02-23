@@ -25,9 +25,9 @@ button {
 }
 
 .wrapper {
-    max-width: 400px;
+    max-width: 390px;
     min-height: 366px;
-    width: 400px;
+    width: 390px;
     background: url("img/background_1.jpg") 0 0 / cover no-repeat;
     font-family: "Rubik";
 }
