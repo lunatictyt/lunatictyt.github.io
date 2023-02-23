@@ -27,7 +27,6 @@ button {
 .wrapper {
     max-width: 400px;
     min-height: 366px;
-    width: 390px;
     background: url("img/background_1.jpg") 0 0 / cover no-repeat;
     font-family: "Rubik";
     background: #000000;
