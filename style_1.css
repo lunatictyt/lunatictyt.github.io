@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-Regular.woff2') format('woff2'), url('fonts/Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: "Rubik";
+}
+
+.wrapper {
+    max-width: 390px;
+    min-height: 366px;
+    width: 390px;
+    background: url("img/background_1.jpg") 0 0 / cover no-repeat;
+    font-family: "Rubik";
+}
+
+.block-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.block-menu__btn {
+    color: #fff;
+    width: 312px;
+    height: 55px;
+    border: none;
+    background: rgba(14, 3, 3, 0.35);
+    border-radius: 110px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(3.5px);
+    border: 1.11px solid #C03636;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.block-menu__btn:first-child {
+    margin-top: 28px;
+}
+
+.block-menu__btn:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.block-menu__btn:nth-child(1) {
+    padding: 17px 117px;
+}
+
+.block-menu__btn:nth-child(2) {
+    background: url("img/s_diary.png") 0 0 / cover no-repeat;
+    padding: 17px 118px;
+}
+
+.block-menu__btn:nth-child(3) {
+    padding: 17px 122px;
+}
+
+.block-menu__btn:nth-child(4) {
+    background: url("img/s_workers.png") 0 0 / cover no-repeat;
+    margin-bottom: 29px;
+    padding: 17px 117.5px;
+}
+
+.block-menu__support {
+    width: 28px;
+    height: 28px;
+    float: right;
+    margin-right: 19px;
+    border-radius: 50%;
+    border: 2px transparent;
+    background: conic-gradient(from 180deg at 50% 50%, #ff0000, #000000);
+}
