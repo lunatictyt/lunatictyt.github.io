@@ -1,0 +1,282 @@
+@import url("fonts.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+[class*="__container"] {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.info-center {
+    padding: 48px 0px;
+    text-align: center;
+}
+
+.info-center__title {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.info-center__title span {
+    color: #A8002C;
+}
+
+.info-center__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.info-center__subtitle span {
+    color: #44A5FF;
+}
+
+.info-center__img {
+    margin-bottom: 12px;
+}
+
+.info-center__text {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.info-center__text:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.info-consultation {
+    margin-bottom: 120px;
+}
+
+.info-consultation__title {
+    font-weight: 700;
+    font-size: 72px;
+    color: #44A5FF;
+    margin-bottom: 146px;
+}
+
+.info-consultation__title span {
+    font-weight: 700;
+    font-size: 96px;
+    color: #202020;
+}
+
+.info-consultation__subtitle {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.phone-consultation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.phone-consultation__title {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.phone-consultation__title span {
+    color: #48C95F;
+}
+
+.phone-consultation__link {
+    font-weight: 700;
+    font-size: 32px;
+    color: #48C95F;
+}
+
+.info-help {
+    margin-bottom: 120px;
+}
+
+.info-help__title {
+    font-weight: 900;
+    font-size: 64px;
+    margin-bottom: 48px;
+}
+
+.info-help__title span {
+    color: #48C95F;
+}
+
+.advantages {
+    margin-bottom: 60px;
+}
+
+.advantages__title {
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.advantages__title span {
+    background: linear-gradient(90.52deg, #44A5FF -0.15%, #55BFFF 66.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.block-advantages {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.block-advantages p {
+    font-weight: 400;
+    font-size: 32px;
+    color: #666666;
+}
+
+.block-advantages:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.block-necessity li {
+    font-weight: 400;
+    font-size: 32px;
+    margin-left: 40px;
+    color: #666666;
+}
+
+.block-necessity li:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+
+/* .blocks {
+        display: flex;
+        flex-direction: column;
+        max-height: 244px;
+        max-width: 201px;
+        flex-wrap: wrap;
+    } */
+
+.block-our {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.blocks {
+    display: flex;
+    /* max-width: 201px; */
+    gap: 32px;
+    flex-direction: column;
+    /* max-height: 244px; */
+    flex-wrap: wrap;
+    max-height: 244px;
+}
+
+.block-our p {
+    max-height: 244px;
+    max-width: 201px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #666666;
+}
+
+.our {
+    margin-bottom: 80px;
+}
+
+.crucially {
+    margin-bottom: 48px;
+}
+
+.other {
+    margin-bottom: 80px;
+}
+
+.crucially__title {
+    font-weight: 500;
+    font-size: 48px;
+    color: #FF6464;
+    margin-bottom: 16px;
+}
+
+.crucially__text {
+    font-weight: 400;
+    font-size: 24px;
+    color: #666666;
+    max-width: 490px;
+}
+
+@media (max-width: 1140px) {
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+
+
+/* №2 */
+
+@media (max-width: 991.98px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+}
+
+
+/* №3 */
+
+@media (max-width: 767.98px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+    .blocks {
+        max-height: none;
+    }
+    .info-help__title {
+        font-size: 46px;
+    }
+    .advantages__title {
+        font-size: 32px;
+    }
+    .info-consultation__title {
+        font-size: 48px;
+        margin-bottom: 80px;
+    }
+    .info-consultation__title span {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: normal;
+        color: #202020;
+    }
+    .info-consultation__subtitle {
+        font-size: 32px;
+    }
+    .phone-consultation__title {
+        font-size: 24px;
+    }
+    .phone-consultation__link {
+        font-size: 24px;
+    }
+}
